@@ -1,0 +1,13 @@
+{
+  "new_tab": "New tab",
+  "back": "Back",
+  "forward": "Forward",
+  "reload": "Reload",
+  "bookmark": "Bookmark",
+  "bookmarks": "Bookmarks",
+  "history": "History",
+  "about": "About",
+  "about_text": "brzil browser — project maintained by David Adriano Ferrari dos Santos.",
+  "made_by": "Made by David Adriano Ferrari dos Santos",
+  "address_placeholder": "Type an address or search (e.g. example.com)"
+}

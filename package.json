@@ -1,0 +1,40 @@
+{
+  "name": "brzil",
+  "productName": "brzil",
+  "version": "0.1.0",
+  "description": "Navegador brzil — versão inicial (Electron + React) — PT-BR",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev:ui": "vite",
+    "dev:electron": "wait-on http://localhost:5173 && electron .",
+    "dev": "concurrently -k \"npm:dev:ui\" \"npm:dev:electron\"",
+    "build:ui": "vite build",
+    "build": "npm run build:ui && electron-builder",
+    "lint": "echo \"no linter configured\""
+  },
+  "author": "David Adriano Ferrari dos Santos",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0",
+    "electron": "^26.0.0",
+    "vite": "^5.0.0",
+    "wait-on": "^7.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.davidadrianofe.brzil",
+    "productName": "brzil",
+    "files": [
+      "dist/**",
+      "electron/**",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
